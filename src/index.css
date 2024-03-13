@@ -3,11 +3,9 @@
   line-height: 1.5;
   font-weight: 400;
   text-align: center;
-
   color-scheme: light dark;
   color: rgba(0, 0, 0, 0.87);
   background-color: #F2D8D9;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -68,5 +66,52 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.comment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  padding: 1em;
+  border: 1px solid #db5f7a;
+  border-radius: 8px;
+  background-color: #f5d0d0;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.comment:last-child {
+  margin-bottom: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.user-list {
+  width: 100%;
+  padding: 20px;
+  grid-gap: 10px;
+}
+
+.comment-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1px;
+  align-content: start;
+  column-gap: 1px;
+}
+.user-list, .comment-list {
+  padding: 20px;
 }
 
